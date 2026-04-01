@@ -35,3 +35,34 @@ O código foi estruturado de forma modular para facilitar a manutenção e a esc
 ├── requirements.txt       # Dependências do projeto
 └── .env.example           # Modelo de variáveis de ambiente
 
+🚀 Como Executar o Projeto
+1. Clone o repositório:
+git clone https://github.com/patriota88/Aut-Email-IA.git
+cd Aut-Email
+
+2. Crie e ative o ambiente virtual:
+
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+
+3. Instale as dependências:
+
+pip install -r requirements.txt
+
+4. Configure as Variáveis de Ambiente:
+Crie um arquivo chamado .env na raiz do projeto e preencha com suas credenciais, seguindo a estrutura abaixo:
+
+OPENROUTER_API_KEY=sua_chave_da_api_aqui
+EMAIL_USER=seu_email_corporativo@gmail.com
+EMAIL_PASS=sua_senha_de_app_gerada
+BITRIX_WEBHOOK_URL=sua_url_de_webhook_aqui
+
+5. Execute a automação:
+
+python main.py
+
